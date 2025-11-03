@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Pribadi - Kaila Zahwa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <button id="themeToggle">🌗 Ganti Tema</button>
+
+        <header class="text-center fade-in">
+            <h1>Portofolio Pribadi</h1>
+            <img src="foto.jpg.png" alt="Foto Profil Kaila Zahwa" id="fotoProfil" />
+            <blockquote>"Menjadi versi terbaik dari diri sendiri setiap hari."</blockquote>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Halo! Saya <strong>Kaila Zahwa</strong>, seorang mahasiswa yang tertarik pada dunia
+                    <em>web development</em> dan desain antarmuka pengguna. Saya senang belajar hal baru
+                    dan membangun proyek kreatif berbasis teknologi.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h2>Kemampuan</h2>
+                <ul>
+                    <li>HTML, CSS, dan JavaScript</li>
+                    <li>Desain UI/UX</li>
+                    <li>IoT dan Otomatisasi</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Riwayat Pendidikan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Institusi</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022 - Sekarang</td>
+                            <td>Universitas Sebelas April Sumedang</td>
+                            <td>Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <td>2019 - 2022</td>
+                            <td>SMA Negeri Darmaraja</td>
+                            <td>Jurusan IPA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="projects">
+                <h2>Proyek</h2>
+                <ol>
+                    <li>Smart Home IoT dengan Wemos D1 Mini</li>
+                    <li>Marketplace Materi Akademik Bekas</li>
+                    <li>Website Portofolio dengan CSS dan JavaScript</li>
+                </ol>
+            </section>
+
+            <section id="music">
+                <h2>Musik Favorit 🎵</h2>
+                <div class="music-player">
+                    <audio id="musik" controls>
+                        <source src="rizkyfebian.mp3" type="audio/mpeg" />
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                    <button id="playBtn">▶️ Putar Lagu Rizky Febian</button>
+                </div>
+            </section>
+
+            <section id="video">
+                <h2>Video Inspirasi 🎬</h2>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/GMN6NbB4bx4?si=25O4falGgtOXXmHe"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Kaila Zahwa | Dibuat dengan ❤️ menggunakan HTML, CSS & JS</p>
+            <button id="scrollTop">⬆️ Kembali ke Atas</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

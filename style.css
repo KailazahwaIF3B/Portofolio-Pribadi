@@ -1,0 +1,177 @@
+/* Warna Dasar (Sesuai Modul CSS: #2980b9) */
+:root {
+    --primary-color: #2980b9;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --card-background: #ffffff;
+    --border-color: #ccc;
+    --quote-background: #ecf0f1;
+}
+
+/* Tema Gelap */
+.dark-theme {
+    --text-color: #ecf0f1;
+    --background-color: #1c2833;
+    --card-background: #2c3e50;
+    --border-color: #444;
+    --quote-background: #34495e;
+}
+
+/* Pengaturan Global dan Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container utama */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: var(--card-background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header dan Judul */
+h1 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+/* Foto Profil */
+#fotoProfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    margin: 20px 0;
+}
+
+/* Blockquote (Sesuai Modul CSS) */
+blockquote {
+    font-style: italic;
+    margin: 10px 0 30px;
+    padding: 15px;
+    background-color: var(--quote-background);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-color); /* Memastikan teks quote tetap terbaca */
+}
+
+/* Table (Sesuai Modul CSS) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+/* Memperjelas baris ganjil/genap */
+tbody tr:nth-child(even) {
+    background-color: rgba(41, 128, 185, 0.05);
+}
+
+/* List (Kemampuan & Proyek) */
+ul, ol {
+    margin: 10px 0 20px 20px;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+/* Audio & Video (Sesuai Modul CSS) */
+iframe {
+    display: block;
+    width: 100%; /* Membuat responsif */
+    max-width: 560px; /* Batasan maksimum */
+    margin: 20px auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+.music-player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+#themeToggle, #playBtn, #scrollTop {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#themeToggle:hover, #playBtn:hover, #scrollTop:hover {
+    background-color: #3498db;
+}
+
+/* Layout Utilities */
+.text-center {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0 10px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+    iframe {
+        height: 250px;
+    }
+    .music-player {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Animasi Fade-in (Efek visual) */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
